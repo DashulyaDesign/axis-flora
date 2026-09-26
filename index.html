@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axis Flora — green space specialist</title>
+  <meta name="description" content="Axis Flora — landscaping of private properties, offices, terraces and events. Plant selection, installation and care." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Cormorant+SC:wght@300;400;500;600;700&family=Corinthia:wght@400;700&family=Dela+Gothic+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr" id="hdr">
+    <a href="#hero" class="hdr__logo js-nav" data-target="#hero">Axis Flora</a>
+    <div class="hdr__contacts">
+      <a href="tel:+7906079959595">+7 906 079 95-95-95</a>
+      <a href="mailto:i@tsypkina-work.ru">i@tsypkina-work.ru</a>
+    </div>
+  </header>
+
+  <!-- ============ PEARL MENU BUTTON ============ -->
+  <button class="pearl" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span class="pearl__print" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <g opacity=".9">
+          <ellipse cx="18" cy="96" rx="16" ry="6" fill="#7f9a55" transform="rotate(-35 18 96)"/>
+          <ellipse cx="104" cy="30" rx="15" ry="5.5" fill="#86a15b" transform="rotate(-50 104 30)"/>
+          <ellipse cx="100" cy="92" rx="13" ry="5" fill="#6c964b" transform="rotate(30 100 92)"/>
+          <ellipse cx="14" cy="40" rx="12" ry="4.5" fill="#8aa564" transform="rotate(60 14 40)"/>
+        </g>
+        <g transform="translate(40 38)">
+          <g fill="#e39aa9">
+            <ellipse cx="0" cy="-17" rx="11" ry="15"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(288)"/>
+          </g>
+          <circle r="8" fill="#e9dc98"/>
+        </g>
+        <g transform="translate(76 84) scale(.85)">
+          <g fill="#d27a8e">
+            <ellipse cx="0" cy="-17" rx="11" ry="15"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-17" rx="11" ry="15" transform="rotate(288)"/>
+          </g>
+          <circle r="8" fill="#e9dc98"/>
+        </g>
+        <circle cx="104" cy="62" r="7" fill="#c9667f"/>
+      </svg>
+    </span>
+    <span class="pearl__holes" aria-hidden="true"><i></i><b></b><i></i></span>
+    <span class="pearl__label"><span class="pearl__open">menu</span><span class="pearl__close">close</span></span>
+  </button>
+
+  <!-- ============ MENU ============ -->
+  <nav class="menu" id="menu" aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="#about" class="js-nav" data-target="#about"><em>i.</em><span>about us</span></a></li>
+      <li><a href="#services" class="js-nav" data-target="#services"><em>ii.</em><span>services</span></a></li>
+      <li><a href="#projects" class="js-nav" data-target="#projects"><em>iii.</em><span>our projects</span></a></li>
+      <li><a href="#contact" class="js-nav" data-target="#contact"><em>iv.</em><span>contact us</span></a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="tel:+7906079959595">+7 906 079 95-95-95</a>
+      <a href="mailto:i@tsypkina-work.ru">i@tsypkina-work.ru</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ BLOCK 1 · HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <canvas class="hero__canvas" id="flowerCanvas" aria-label="Aquilegia flower made of particles"></canvas>
+
+      <div class="hud" aria-hidden="true">
+        <span class="hud__line hud__line--v"></span>
+        <span class="hud__line hud__line--h1"></span>
+        <span class="hud__line hud__line--h2"></span>
+        <span class="hud__tag hud__tag--1"><i></i>fig. 01 — aquilegia</span>
+        <span class="hud__tag hud__tag--2"><i></i>rotation <b id="rotReadout">000°</b></span>
+        <span class="hud__tag hud__tag--3"><i></i>particles <b id="partReadout">0000</b></span>
+        <span class="hud__tag hud__tag--4"><i></i>move the cursor ⟷</span>
+      </div>
+
+      <p class="hero__tagline">transforming<br/>your environment</p>
+    </section>
+
+    <!-- ============ BLOCK 2 · LIVELY RHYTHM ============ -->
+    <section class="rhythm" id="rhythm">
+      <div class="rhythm__stage">
+        <h2 class="rhythm__title" id="lively" aria-label="Lively rhythm">
+          <span class="rhythm__row" data-text="LIVELY"></span>
+          <span class="rhythm__row" data-text="RHYTHM"></span>
+        </h2>
+        <p class="rhythm__script">green space specialist</p>
+
+        <div class="ficon ficon--left" aria-hidden="true"></div>
+        <div class="ficon ficon--right" aria-hidden="true"></div>
+
+        <canvas class="rhythm__pattern" id="patternCanvas" aria-hidden="true"></canvas>
+      </div>
+    </section>
+
+    <!-- ============ BLOCK 3 · ABOUT ============ -->
+    <section class="about" id="about">
+      <header class="sec-title about__title">
+        <svg class="leaf leaf--l" viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7C6 0 18 0 25 7C18 14 6 14 1 7Z"/><path class="rib" d="M2 7H22"/></svg>
+        <h2>about us</h2>
+        <svg class="leaf leaf--r" viewBox="0 0 26 14" aria-hidden="true"><path d="M1 7C6 0 18 0 25 7C18 14 6 14 1 7Z"/><path class="rib" d="M2 7H22"/></svg>
+      </header>
+
+      <p class="about__text js-lines">
+        Nature is complex, but we simplify it for you. With many years of experience in the field of landscaping,
+        we offer comprehensive solutions. Our approach is based on scientific selection — choosing plants that are
+        suitable for specific conditions of lighting, humidity, and space. We take care of everything — from
+        installation to ongoing maintenance — so that your investment in landscaping yields a profit all year round
+      </p>
+
+      <p class="about__cta js-lines">Get started quickly on choosing a service</p>
+      <span class="about__down" aria-hidden="true">↓</span>
+    </section>
+
+    <!-- ============ HORIZONTAL SCROLL ============ -->
+    <section class="hs" id="paths">
+      <div class="hs__track">
+        <div class="hs__intro">
+          <span class="hs__kicker">three ways to begin</span>
+          <h3>choose<br/>your green<br/><em>direction</em></h3>
+          <span class="hs__hint">keep scrolling →</span>
+        </div>
+
+        <article class="slide slide--1">
+          <div class="slide__art">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <circle class="slide__sun" cx="150" cy="52" r="20"/>
+              <path class="draw stem" d="M100 168 C100 130 92 110 104 80 C112 60 104 44 100 30"/>
+              <g class="sway">
+                <path class="leafy" d="M102 118 C80 110 66 96 62 80 C84 84 98 98 102 118Z"/>
+                <path class="leafy" d="M104 92 C124 86 138 72 140 56 C120 60 106 74 104 92Z"/>
+                <path class="leafy" d="M101 60 C88 52 82 40 84 28 C96 34 102 46 101 60Z"/>
+              </g>
+              <path class="pot" d="M72 164 H128 L120 196 H80 Z"/>
+            </svg>
+          </div>
+          <div class="slide__txt">
+            <span class="slide__num">01</span>
+            <h4>private spaces</h4>
+            <p>Gardens, terraces and entrance areas that breathe with the seasons.</p>
+            <a href="#services" class="slide__go js-nav" data-target="#services">choose →</a>
+          </div>
+        </article>
+
+        <article class="slide slide--2">
+          <div class="slide__art">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <path class="draw grid" d="M20 170 H180 M20 120 H180 M20 70 H180"/>
+              <g class="bob b1"><circle cx="45" cy="100" r="16"/><circle cx="56" cy="92" r="11"/><rect x="36" y="108" width="22" height="12"/></g>
+              <g class="bob b2"><circle cx="100" cy="98" r="18"/><circle cx="88" cy="90" r="10"/><rect x="90" y="108" width="22" height="12"/></g>
+              <g class="bob b3"><circle cx="155" cy="100" r="15"/><circle cx="146" cy="92" r="10"/><rect x="144" y="108" width="22" height="12"/></g>
+              <g class="bob b2"><circle cx="45" cy="150" r="15"/><rect x="34" y="158" width="22" height="12"/></g>
+              <g class="bob b3"><circle cx="100" cy="146" r="19"/><circle cx="112" cy="140" r="10"/><rect x="89" y="158" width="22" height="12"/></g>
+              <g class="bob b1"><circle cx="155" cy="148" r="16"/><rect x="144" y="158" width="22" height="12"/></g>
+              <g class="bob b1"><circle cx="72" cy="50" r="14"/><circle cx="128" cy="48" r="16"/><rect x="61" y="58" width="22" height="12"/><rect x="117" y="58" width="22" height="12"/></g>
+            </svg>
+          </div>
+          <div class="slide__txt">
+            <span class="slide__num">02</span>
+            <h4>business spaces</h4>
+            <p>Offices and lobbies where plants lower the noise and raise the focus.</p>
+            <a href="#services" class="slide__go js-nav" data-target="#services">choose →</a>
+          </div>
+        </article>
+
+        <article class="slide slide--3">
+          <div class="slide__art">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <circle class="draw ring" cx="100" cy="96" r="72"/>
+              <g class="spin">
+                <g class="petals">
+                  <ellipse cx="100" cy="62" rx="16" ry="30"/>
+                  <ellipse cx="100" cy="62" rx="16" ry="30" transform="rotate(72 100 96)"/>
+                  <ellipse cx="100" cy="62" rx="16" ry="30" transform="rotate(144 100 96)"/>
+                  <ellipse cx="100" cy="62" rx="16" ry="30" transform="rotate(216 100 96)"/>
+                  <ellipse cx="100" cy="62" rx="16" ry="30" transform="rotate(288 100 96)"/>
+                </g>
+                <circle class="core" cx="100" cy="96" r="12"/>
+              </g>
+              <g class="drops"><circle cx="40" cy="20" r="3"/><circle cx="160" cy="30" r="2.5"/><circle cx="60" cy="10" r="2"/><circle cx="145" cy="6" r="2"/></g>
+            </svg>
+          </div>
+          <div class="slide__txt">
+            <span class="slide__num">03</span>
+            <h4>events &amp; care</h4>
+            <p>Event installations, custom planters and ongoing care for every leaf.</p>
+            <a href="#services" class="slide__go js-nav" data-target="#services">choose →</a>
+          </div>
+        </article>
+      </div>
+      <div class="hs__progress"><span></span></div>
+    </section>
+
+    <!-- ============ BLOCK 4 · SERVICES ============ -->
+    <section class="svc" id="services">
+      <h2 class="sec-title svc__title" id="svcTitle" aria-label="services">services</h2>
+
+      <div class="svc__box" id="svcBox" data-lenis-prevent tabindex="0" aria-label="List of services, scroll to browse">
+        <ul class="svc__list" id="svcList"></ul>
+      </div>
+      <span class="svc__hint">scroll inside ↕</span>
+
+      <button class="glass-btn" id="orderBtn" type="button">Заказать</button>
+
+      <a href="#projects" class="svc__view js-nav" data-target="#projects">
+        <span>VIEW OUR PROJECTS</span>
+        <span class="svc__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3V21M5 14L12 21L19 14"/></svg>
+        </span>
+      </a>
+    </section>
+
+    <!-- ============ BLOCK 5 · PROJECTS ============ -->
+    <section class="prj" id="projects">
+      <h2 class="sec-title prj__title">our projects</h2>
+      <p class="prj__hint">move your cursor across the field</p>
+      <div class="prj__stage" id="prjStage"></div>
+      <span class="prj__ghost" aria-hidden="true">projects</span>
+    </section>
+
+    <!-- ============ BLOCK 6 · CONTACT ============ -->
+    <section class="contact" id="contact">
+      <h2 class="sec-title contact__title">contact us</h2>
+      <a class="contact__phone" href="tel:+7906079959595">+7 906 079 95-95-95</a>
+      <a class="contact__mail" href="mailto:i@tsypkina-work.ru">i@tsypkina-work.ru</a>
+      <ul class="contact__social">
+        <li>
+          <!-- TODO: заменить # на ссылку Telegram -->
+          <a href="#" aria-label="Telegram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M21.5 3.5L2.8 10.8c-.8.3-.8 1.4 0 1.7l4.6 1.6 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.4 4.7 3.5c.6.4 1.4.1 1.6-.6l3.2-15.6c.2-.8-.6-1.4-1.4-1.1z"/><path d="M7.4 14.1L18 6.7l-7.9 8.6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/7906079959595" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.6 8.6 0 1 1 8 19.4z"/><path d="M9 8.3c.3-.6.9-.6 1.2 0l.7 1.5c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.5.7c.6.3.6.9 0 1.2-1.4 1-3.5.4-5.3-1.4S8 9.7 9 8.3z"/></svg>
+          </a>
+        </li>
+        <li>
+          <!-- TODO: заменить # на ссылку Instagram -->
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".9" class="fill"/></svg>
+          </a>
+        </li>
+      </ul>
+      <footer class="contact__foot">
+        <span>© 2026 Axis Flora</span>
+        <span>transforming your environment</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ============ ORDER MODAL ============ -->
+  <div class="modal" id="orderModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="modal__backdrop" data-close></div>
+    <form class="modal__panel" id="orderForm" novalidate>
+      <button type="button" class="modal__x" data-close aria-label="Закрыть">×</button>
+      <h3 id="orderTitle">Заказать</h3>
+      <p class="modal__service">услуга: <span id="orderService">—</span></p>
+
+      <label class="field">
+        <span>Имя</span>
+        <input type="text" name="name" autocomplete="name" required />
+      </label>
+      <label class="field">
+        <span>Номер телефона</span>
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+      </label>
+      <label class="field">
+        <span>Почта</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+      <!-- honeypot против спама -->
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" />
+
+      <button type="submit" class="glass-btn glass-btn--wide" id="orderSubmit">Отправить</button>
+      <p class="modal__status" id="orderStatus" role="status"></p>
+    </form>
+  </div>
+
+  <!-- SVG filter for the melting text -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="melt" x="-20%" y="-40%" width="140%" height="180%">
+      <feTurbulence id="meltNoise" type="fractalNoise" baseFrequency="0.004 0.06" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap id="meltMap" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="js/flower-src.js"></script>
+  <script src="js/flower.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
