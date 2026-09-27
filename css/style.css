@@ -684,11 +684,13 @@ ul { list-style: none; }
   pointer-events: none;
 }
 .prj__ghost {
-  position: absolute; left: 50%; bottom: -3vw; transform: translateX(-50%);
-  font-family: var(--f-choom); font-size: 19vw; line-height: 1;
+  position: absolute; left: 0; right: 0; bottom: clamp(12px, 3vh, 36px);
+  text-align: center;
+  font-family: var(--f-choom); font-size: 12vw; line-height: .9;   /* exact size is fitted in JS */
   color: transparent; -webkit-text-stroke: 1px rgba(201,163,214,.16);
   white-space: nowrap; pointer-events: none; text-transform: uppercase;
 }
+.prj__ghost span { display: inline-block; }
 .prj__stage { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
 .trail {
   position: absolute; left: 0; top: 0;

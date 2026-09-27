@@ -703,6 +703,14 @@
 
     /* ---------- BLOCK 5 · PROJECTS ---------- */
     initProjects();
+    // the big outlined "projects" always fits the screen width (whole word visible)
+    const ghost = $('.prj__ghost'), ghostWord = $('.prj__ghost span');
+    const fitGhost = () => {
+      ghost.style.fontSize = '100px';
+      ghost.style.fontSize = (100 * ghost.clientWidth * 0.94 / ghostWord.getBoundingClientRect().width) + 'px';
+    };
+    fitGhost();
+    window.addEventListener('resize', fitGhost);
     gsap.from('.prj__ghost', {
       yPercent: 40, opacity: 0, ease: 'none',
       scrollTrigger: { trigger: '#projects', start: 'top bottom', end: 'bottom bottom', scrub: true }
